@@ -1,0 +1,115 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CoffeCaia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+  <body>
+    <header class="sticky-top">
+    <!-- menu -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img class="logo" src="images/logo.jpg" alt="logo">
+        CoffeCaia</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="Contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+    </header>
+    <main>
+    <!--carousel -->
+    <section id="carousel">
+        <div id="carouselExampleFade" 
+        class="carousel slide carousel-fade" 
+        data-bs-ride="carousel" 
+        data-bs-pause="false">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/10.jpg" class="d-block w-100" alt="imagen1">
+            </div>
+            <div class="carousel-item">
+                <img src="images/12.jpg" class="d-block w-100" alt="imagen2">
+            </div>
+            <div class="carousel-item">
+                <img src="images/11.jpg" class="d-block w-100" alt="imagen3">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <section id="Inicio">
+       <div class="container">
+        <div class="row my-5">
+          <!-- titulos con texto -->   
+            <div class="col text-center">
+                <h1>
+                    <img src="images/logo.jpg" alt="logo2">
+                    CoffeCaia
+                </h1>
+                <p class="text-start">Lo que es común a todos los cafés es que la planta de la que se obtiene el fruto pertenece a la familia coffea, que contiene cafeína y que con él elaboramos una bebida. Pero eso nos dice muy poco sobre el café.</p>
+                <p class="text-start">Y esta es, básicamente, toda la información que ofrece un café comercial. Nosotros usamos el término café comercial en contraposición a los cafés especiales o cafés de especialidad.</p>
+                <p class="text-start">La mediocridad es un café con notas de sabor generalmente desagradables, amargas y estandarizadas; todos los cafés comerciales tienen un sabor parecido. </p>
+                <p class="text-start">Te invitamos a descubrir sabores diferentes para así aprender a redescubrir el sabor del café</p>
+              </div>
+        </div>
+        <!-- tarjetas con mas info -->
+          <div class="cards-container row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5">
+
+          </div>
+    </div>
+ 
+    </section>
+    </main>
+<footer class="bg-dark">
+    <div class="container h-100">
+    <div class="row text-white h-100 d-flex justify-content-center align-items-center">
+        <div class="col text-center col-12 col-md">
+        <!-- logo -->        
+        <h2>
+            <img src="images/logo.jpg" alt="logo">
+            CoffeCaia
+        </h2>
+        </div>
+        <div class="col text-center col-12 col-md">
+            <img src="images/facebook.png" alt="Facebook">
+            <img src="images/instagram.png" alt="Intagram">
+            <img src="images/gorjeo.png" alt="Twitter">
+            <!-- redes sociales -->
+        </div>
+        <div class="col text-center col-12 col-md">
+        <!-- lista mas opciones -->
+            <ul class="text-center fw-bold">
+                <li>Telefono: 11-23232323</li>
+                <li>Mail: CoffeCaia@gmail.com</li>
+            </ul>
+        </div>
+        </div>
+    </div>
+</footer>
+    <script src="js/cards.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
