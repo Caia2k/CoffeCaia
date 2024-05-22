@@ -3,20 +3,20 @@ const baseURL = "https://api.sampleapis.com/coffee/hot";
 function Armotarjetas() {
 
     fetch(baseURL).then (r => r.json()).then(result => {
-     for (var kv of result) {
+     for (var i of result) {
        var option = document.createElement("option");
-       option.text = kv.title;
-       option.id= kv.id;
+       option.text = i.title;
+       option.id= i.id;
        // aqui filtro estos valores porque la API me trae basura con esos dos titulos 
-       if (kv.title != 'hookéh²²' && kv.title !='hookah') {
+       if (i.title != 'hookéh²²' && i.title !='hookah' && i.title != 'Martini') {
         const article = document.createRange().createContextualFragment(`
         <article>
             <div class="col">
-            <div class="card h-100">
-            <img src="${kv.image}" class="card-img-top object-fit-cover" alt="imagen">
+            <div class="card card h-100">
+            <img src="${i.image}" class="card-img-top object-fit-cover" alt="imagen">
             <div class="card-body">
-                <h5 class="card-title">${kv.title}</h5>
-                <p class="card-text">${kv.description}.</p>
+                <h5 class="card-title">${i.title}</h5>
+                <p class="card-text">${i.description}.</p>
             </div>
             </div>
         </div>
